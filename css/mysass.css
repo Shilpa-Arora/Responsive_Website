@@ -1,0 +1,205 @@
+/* CSS Document */
+img, embed, object, video {
+  max-width: 100%; }
+
+/*Fix for scaling of images IE*/
+img {
+  -ms-interpolation-mode: bicubic; }
+/*general properties*/
+@font-face {
+  font-family: 'lato_semibold';
+  src: url("../fonts/lato-semibold-webfont.woff2") format("woff2"), 
+  url("../fonts/lato-semibold-webfont.woff") format("woff");
+  font-family: 'lato_semibolditalic';
+  src: url("../fonts/lato-semibolditalic-webfont.woff2") format("woff2"), 
+  url("../fonts/lato-semibolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+a {
+  text-decoration: none;
+  color: #cccccc; }
+  .hidden {
+  display: none; }
+/*containers*/
+#mainNav ul li {
+  font-family: "lato_semibold", Arial, sans-serif;
+  font-size: 24px; }
+
+#logo h2 {
+  text-align: center;
+  font-size: 56px;
+  padding: 15px 0 0px 0;
+  color: white;
+  font-family: 'lato_semibolditalic', Arial, sans-serif; }
+#container {
+  /*margin: 10px auto;*/
+  overflow: hidden;
+  background-color: black;
+  max-width: 100%; }
+#mainFooter {
+  background-color: black;
+  height: 88px; }
+
+#footerCon {
+  padding: 20px 15px 0px 15px; }
+
+#bottomNav {
+  text-align: center;
+  font-size: .9375em;
+  /*15/16*/ }
+
+#bottomNav ul li {
+  font-family: "lato_semibold", Arial, sans-serif;
+  color: #cccccc;
+  display: inline;
+  margin-right: 10px; }
+
+#copyright {
+  color: #cccccc;
+  font-family: 'lato_semibolditalic', Arial, sans-serif;
+  text-align: center;
+  font-size: .625em;
+  /*10/16*/
+  margin-top: 20px; }
+
+/* Main Toggle menu start*/
+#mainNav {
+  display: block; }
+
+#mainNav ul {
+  display: none;
+ }
+
+#mainNav ul.slideToggle {
+  display: block; }
+
+#mainNav button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.8) url(../images/burger.svg) center no-repeat;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  height: 30px;
+  outline: none; }
+
+#mainNav a {
+  background-color: black;
+  display: block;
+  color: #cccccc;
+  padding: 10px 0 10px 0;
+  text-align: center; }
+
+#mainNav li a:hover {
+  color: black;
+  background-color: #fff; }
+
+/* Min toggle menu ends*/
+
+/*media queries*/
+@media screen and (min-width: 20.25em) {
+  /*mobile Size */
+  #bgImg {
+    background-image: url("../images/leaf.jpg");
+    background-size: cover;
+    float: left;
+    display: inline-block;
+    height: 75.166666666666666%; }
+
+  #bgImg p {
+    font-family: "lato_semibold", Arial, sans-serif;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 1.5; }
+
+  #bgImg h3 {
+    margin-top: 10px;
+    font-family: "lato_semibold", Arial, sans-serif;
+    font-size: 1.5em; }
+
+  #img1 {
+    margin-top: 10px; } }
+
+@media screen and (min-width: 48em) {
+  /*tablet size*/
+  #bgImg {
+    background-image: url("../images/leaf.jpg");
+    background-size: cover;
+    float: left;
+    display: inline-block;
+    height: 75.166666666666666%; }
+
+  #bgImg p {
+    font-size: 1.4375em;
+    font-family: "lato_semibold", Arial, sans-serif; }
+
+  #bgImg h3 {
+    font-family: "lato_semibold", Arial, sans-serif;
+    font-size: 2.333em;
+    margin-top: 0px;
+    margin-bottom: 20px; }
+
+  #material1, #material2, #material3 {
+    text-align: justify;
+    margin-top: 3.1666%;
+    margin-left: 4.427%;
+    float: right;
+    width: 41.145833333333333%;
+    height: 21.166666666666666%; }
+
+  .mainImg {
+    margin-top: 1.333%;
+    float: left;
+    width: 50%;
+    height: 23.6666%;
+    margin-left: 4.427%; }
+
+  #img1 {
+    margin-top: 0px; }
+
+  #img3 {
+    margin-bottom: 1.333%; } }
+    
+@media screen and (min-width: 75em) {
+  /* full size*/
+  #mainNav {
+    display: block;
+    max-width: 100%;
+    background-color: black; }
+
+  #mainNav button {
+    position: static;
+    overflow: hidden;
+    display: none; }
+
+  #mainNav ul {
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: black; }
+
+  #mainNav ul li {
+    float: left;
+    padding: 10px 0 10px 0;
+    width: 33.333%; }
+
+  #mainNav a {
+    background-color: black;
+    display: block;
+    color: #cccccc;
+    padding: 10px 0 10px 0;
+    text-align: center; }
+
+  #mainNav li:first-child {
+    border-top: none; }
+
+  #mainNav li:last-child {
+    margin-bottom: 0px; }
+
+  #mainNav li a:hover {
+    color: black;
+    background-color: #fff; } }
+
+/*# sourceMappingURL=mysass.css.map */
